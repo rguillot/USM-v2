@@ -61,14 +61,12 @@ nav
 	z-index:50;
 	position: relative;
 	justify-content: center;
-	margin: 50px;
-
+  margin-top: -66px;
 }
 
 #main_pic
 {
 	margin-top: -22px;
-	margin-bottom: 22px;
 	display: block;
 	max-width: 100%;
 	height: auto;
