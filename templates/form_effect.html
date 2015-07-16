@@ -1,0 +1,45 @@
+ {% block form_effect %}
+<form method="POST">
+    <label for="submit">Ajoutez un licencié</label>
+    <input type="submit" name="submit" value="Ajouter"></input>
+</form>
+
+<form method="post" action="traitement.php">
+ 
+   <fieldset>
+       <legend>Licencié:</legend> <!-- Titre du fieldset -->
+
+       <label for="nom">Nom:</label>
+       <input type="text" name="nom" id="nom" />
+
+       <label for="prenom">Prenom</label>
+       <input type="text" name="prenom" id="prenom" />
+ 
+       <label for="text">Age</label>
+       <input type="text" name="text" id="text" />
+
+   </fieldset>
+ 
+   <fieldset>
+       <legend>Poste:</legend> <!-- Titre du fieldset -->
+ 
+       <p>
+           <input type="radio" name="gardien" value="gardien" id="gardien"/>
+                <label for="gardien">Gardien</label>
+           <input type="radio" name="defenseur" value="defenseur" id="defenseur"/>
+                <label for="defenseur">Défenseur</label>
+           <input type="radio" name="milieu" value="milieu" id="milieu"/>
+                <label for="milieu">Milieu</label>
+           <input type="radio" name="attaquant" value="attaquant" id="attaquant"/>
+                <label for="attaquant">Attaquant</label>
+           <input type="radio" name="dirigeant" value="dirigeant" id="dirigeant"/>
+                <label for="dirigeant">Dirigeant</label>
+       </p>
+   </fieldset>
+        <p>
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Annuler" />
+        </p>
+</form>
+
+ {% endblock %}

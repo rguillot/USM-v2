@@ -1,0 +1,23 @@
+ {% form_news %}
+
+ <form name="form_news" action="news.html" method="get">
+        <fieldset>
+            <legend>News:</legend>
+        Date :
+            <input type="text" name="date" value="" />
+        </p>
+        <p>
+        Titre :
+           <input type="text" size="35" name="titre" value="" />
+        </p>
+        <p>
+        Description :<br />
+           <textarea name="le-message" rows="6" cols="60">Ajoutez une news.</textarea>
+        </p>
+        <p>
+   <input type="submit" value="Envoyer" />
+   <input type="reset" value="Annuler" />
+</p>
+</form>
+
+ {% endblock %}
